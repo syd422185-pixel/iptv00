@@ -26,7 +26,6 @@ export default function Navbar() {
       <div className="container flex items-center justify-between h-16">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <img src="/manus-storage/logo_f8a3b57b.png" alt="اشتراك IPTV" className="w-10 h-10" />
           <span className="text-xl font-black gold-text">اشتراك IPTV</span>
         </a>
 

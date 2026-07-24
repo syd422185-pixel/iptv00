@@ -63,11 +63,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <img src="/manus-storage/logo_f8a3b57b.png" alt="اشتراك IPTV" className="w-14 h-14" />
-              <h1 className="text-4xl md:text-6xl font-black gold-text">اشتراك IPTV</h1>
-              <span className="text-3xl">✨</span>
-            </div>
+            <h1 className="text-4xl md:text-6xl font-black gold-text mb-4">اشتراك IPTV ✨</h1>
             <p className="text-xl md:text-2xl text-gray-600 font-semibold mt-4">
               ارتق إلى قمة تجربة المشاهدة
             </p>
@@ -488,8 +484,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-950 text-gray-400 py-10">
         <div className="container">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <img src="/manus-storage/logo_f8a3b57b.png" alt="اشتراك IPTV" className="w-10 h-10" />
+          <div className="mb-4">
             <span className="text-xl font-bold text-white">اشتراك IPTV</span>
           </div>
           <p className="text-center text-sm text-gray-500 mb-6">أفضل خدمات البث المباشر والأفلام والمسلسلات بجودة 4K</p>
