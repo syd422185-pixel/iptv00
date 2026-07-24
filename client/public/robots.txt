@@ -1,0 +1,16 @@
+# Robots.txt for اشتراك IPTV
+# الدومين: https://quickstream.uk
+
+User-agent: *
+Allow: /
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://quickstream.uk/sitemap.xml
+
+# Block access to debug and internal paths
+Disallow: /__manus/
+Disallow: /debug
+Disallow: /api/
