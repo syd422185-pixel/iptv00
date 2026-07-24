@@ -421,6 +421,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="py-16 md:py-24 bg-white">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <p className="text-[#D4A843] font-bold text-sm mb-2">أسئلة شائعة</p>
+            <h2 className="text-3xl md:text-4xl font-black text-gray-900">
+              الأسئلة الشائعة
+            </h2>
+          </motion.div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {[
+              { q: "ما هي طرق التفعيل؟", a: "يمكنك التفعيل على أندرويد، Google TV، Apple TV، Samsung، LG، وأجهزة الكمبيوتر بسهولة تامة." },
+              { q: "كم عدد الأجهزة المسموح بها؟", a: "الاشتراك يعمل على جهاز واحد فقط. إذا أردت التفعيل على جهاز آخر، تواصل معنا لتغيير الجهاز." },
+              { q: "ما هي جودة البث؟", a: "نوفر جودة بث تصل إلى 4K على جميع القنوات الرياضية والأفلام والمسلسلات." },
+              { q: "هل هناك فترة تجربة مجانية؟", a: "نعم، يمكنك تجربة الخدمة مجاناً لمدة 24 ساعة قبل الاشتراك. تواصل معنا عبر الواتساب للحصول على تجربة مجانية." },
+              { q: "كيف يتم الدفع؟", a: "نقبل التحويل البنكي، STC Pay، Apple Pay، والعديد من طرق الدفع الأخرى. سنزودك بالتفاصيل بعد اختيار الباقة." },
+              { q: "ماذا أفعل إذا توقف البث؟", a: "تواصل معنا عبر الواتساب على مدار الساعة وسنحل المشكلة فوراً. فريق الدعم متاح 24/7." },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="faq-item bg-gray-50 rounded-xl border border-[#D4A843]/10 overflow-hidden"
+              >
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer list-none">
+                    <span className="font-bold text-gray-900 text-sm">{item.q}</span>
+                    <ChevronUp className="w-5 h-5 text-[#D4A843] transition-transform duration-200 rotate-180 group-open:rotate-0" />
+                  </summary>
+                  <div className="px-4 pb-4">
+                    <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
+                  </div>
+                </details>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Support Banner */}
       <section className="py-12 bg-gray-900 text-center">
         <div className="container">

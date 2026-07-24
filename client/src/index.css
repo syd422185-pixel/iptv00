@@ -82,6 +82,20 @@
   --sidebar-ring: oklch(0.72 0.12 75);
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* FAQ summary marker removal */
+.faq-item details summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item details summary {
+  list-style: none;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

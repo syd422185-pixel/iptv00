@@ -47,7 +47,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="gold-gradient text-white font-bold py-2 px-5 rounded-lg hover:shadow-md transition-all duration-300 text-sm"
           >
-            تواصل معنا
+            تواصل واتساب
           </a>
         </div>
 
@@ -91,7 +91,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="gold-gradient text-white font-bold py-3 px-5 rounded-lg text-center text-sm mt-2"
             >
-              تواصل معنا
+              تواصل واتساب
             </a>
           </div>
         </div>
